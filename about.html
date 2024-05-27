@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация о компании</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+    <header>
+
+
+
+
+
+    <!---
+        ==============
+        МЕНЮ НАВИГАЦИИ
+        ==============
+    -->
+
+    <div id="menuxa">
+      
+        <div id="men-main">
+  
+
+   
+    <!---
+        ==============
+        МЕНЮ НАВИГАЦИИ (МОБИЛА)
+        ==============
+     -->
+     <div id="naviga">
+     <button id="myObject" style=" background : linear-gradient(to right, rgb(148, 7, 7), rgb(39, 13, 10)); 
+     color: transparent;
+     -webkit-background-clip: text;">=</button>
+     <div id="mobile" class="hidden" style=" background : linear-gradient(to right, rgb(148, 7, 7), rgb(39, 13, 10)); 
+     color: transparent;
+     -webkit-background-clip: text;">
+        <a id="mob" href="index.html">Main</a>
+        <a id="mob" href="about.html">About company</a>
+        <a id="mob" href="contacts.html">Contacts</a>
+        <a id="mob" href="market.html">Buy goods</a>
+        <a id="mob" href="korzina.html">Bin</a>
+     </div>
+     </div>
+
+       <div id="numif">
+        <a id ="pp" style="color: white; ">HORIKAWA</a>
+        </div>
+
+              
+
+
+         <div id="ico">
+            <ul>
+                
+                <li><a  id="contex" href="index.html">Main</a></li>
+                <li><a id="contex" href="about.html">About company</a></li>
+                <li><a id="contex" href="contacts.html">Contacts</a></li>
+                <li><a  id="contex" href="market.html">Buy goods</a></li>
+                <li><a id="contex" href="korzina.html">Bin</a></li>
+
+            </ul>
+            </div>
+        </div>
+
+    </div>
+
+    
+      
+  
+  
+</header>
+
+    <main>
+
+         <!---
+        ==============
+        ОБЪЯСНЕНИЯ
+        ==============
+     -->
+   <br><br>
+   <br><br>
+   <h1 id="product">About company</h1>
+
+   <div id="a1">
+    <div class="block" style="color: rgb(99, 25, 25)" id="k1">
+        The Horikawa music store occupies a prominent place in the market of musical instruments, offering not only a wide range of products, but also an integrated approach to serving its customers. Founded in 1990, Horikawa has over the years developed into a center of musical culture where professionals and amateurs can find everything they need for their creative needs.
+      </div>
+        <img src="images/20.png" alt="Пример картинки" id="pics3">
+   </div>
+   <br><br>
+   <br><br>
+   <div id="a2">
+    <div class="block" id="kk" style="color: rgb(99, 25, 25)">
+        Horikawa Music Store is a key player in the musical instrument market, offering a wide range of products and services for musicians of all levels. Horikawa has become known for its high quality service and extensive range of tools.<br>
+        The Horikawa store is actively involved in music education, offering advice on the choice of instruments, as well as conducting master classes and seminars for musicians of different levels. This allows customers not only to purchase a tool, but also to improve their playing skills.
+      </div>
+        <img src="images/21.png" alt="Пример картинки" id="pics4">
+   </div>
+<br><br>
+<br><br>
+   <div id="a1">
+    <div class="block" style="color: rgb(99, 25, 25)" id="k3">
+        In addition to the physical store, Horikawa also offers online services, including an online store where customers can purchase tools and accessories through the website. Online consultations and support are also available, which makes the purchase of tools convenient and accessible to a wide audience.
+      </div>
+        <img src="images/22.png" alt="Пример картинки" id="pics3">
+   </div>
+    <br><br>
+    <br><br>
+</main>
+
+
+ <!---
+        ==============
+        ПОДВАЛ САЙТА
+        ==============
+    -->
+    <footer id="podval">
+
+        <div id="credits">
+
+            <div id="menushik">
+                <a id="well" >Menu</a>
+                <br>
+                <a id="menushik2" href="index.html">Main</a>
+                <a id="menushik2" href="about.html">About</a>
+                <a id="menushik2" href="contacts.html"> Contacts</a>
+                <a id="menushik2" href="otzov.html">Buy</a>
+                <a id="menushik2" href="korzina.html">Bin</a>
+
+        
+            </div>
+
+            <a id="tekst" href="market.html" >More goods</a>
+            <a id="tekst">Adress:<br>Truth Street, No. 34, New Jersey<br>(555) 123-4567<br><br>
+                Mn-St 09:00-21:00,<br>
+                
+                Sun.  14:00 - 21:00</a>
+
+
+        </div>
+
+         <br><br>
+         <br><br>
+    </footer>
+
+
+
+
+
+
+
+ <!---
+        ==============
+         СКРИПТ, ЧТОБЫ ШАПКА СЛАЙДИЛАСЬ ВМЕСТЕ С КУРСОРОМ
+        ==============
+    -->
+    <script>
+        const header = document.getElementById('header');
+        let isScrollingDown = false;
+        let lastScrollPosition = window.pageYOffset;
+
+        window.addEventListener('scroll', function() {
+            const currentScrollPosition = window.pageYOffset;
+            if (currentScrollPosition > lastScrollPosition) {
+                isScrollingDown = true;
+            } else {
+                isScrollingDown = false;
+            }
+            lastScrollPosition = currentScrollPosition;
+
+            if (isScrollingDown) {
+                header.classList.add('slide-down');
+            } else {
+                header.classList.remove('slide-down');
+            }
+        });
+    </script>
+
+
+
+
+ <!---
+        ==============
+         СКРИПТ, ЧТОБЫ ПОКАЗАТЬ НАВИГ МОБИЛЫ
+        ==============
+    -->
+<script>
+     // Получаем ссылки на объект и кнопку
+     var myObject = document.getElementById("mobile");
+        var toggleButton = document.getElementById("myObject");
+
+        // Добавляем обработчик события на кнопку
+        toggleButton.addEventListener("click", function() {
+            // Проверяем, есть ли у объекта класс "show"
+            if (myObject.classList.contains("show")) {
+                // Если класс "show" есть, удаляем его и добавляем класс "hidden"
+                myObject.classList.remove("show");
+                myObject.classList.add("hidden");
+            } else {
+                // Если класс "show" нет, удаляем класс "hidden" и добавляем класс "show"
+                myObject.classList.remove("hidden");
+                myObject.classList.add("show");
+            }
+        });
+</script>
+
+
+</body>
+
+</html>

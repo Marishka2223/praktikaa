@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваша корзина</title>
+    <link rel="stylesheet" href="css/style6.css">
+</head>
+<body>
+    <header>
+
+
+
+
+
+
+    <!---
+        ==============
+        МЕНЮ НАВИГАЦИИ
+        ==============
+    -->
+
+    <div id="menuxa">
+      
+        <div id="men-main">
+  
+
+   
+    <!---
+        ==============
+        МЕНЮ НАВИГАЦИИ (МОБИЛА)
+        ==============
+     -->
+     <div id="naviga">
+     <button id="myObject" style=" background : linear-gradient(to right, rgb(148, 7, 7), rgb(39, 13, 10)); 
+     color: transparent;
+     -webkit-background-clip: text;">=</button>
+     <div id="mobile" class="hidden" style=" background : linear-gradient(to right, rgb(148, 7, 7), rgb(39, 13, 10)); 
+     color: transparent;
+     -webkit-background-clip: text;">
+        <a id="mob" href="index.html">Main</a>
+        <a id="mob" href="about.html">About company</a>
+        <a id="mob" href="contacts.html">Contacts</a>
+        <a id="mob" href="market.html">Buy goods</a>
+        <a id="mob" href="korzina.html">Bin</a>
+     </div>
+     </div>
+
+       <div id="numif">
+        <a id ="pp" style="color: white; ">HORIKAWA</a>
+        </div>
+
+              
+
+
+         <div id="ico">
+            <ul>
+                
+                <li><a  id="contex" href="index.html">Main</a></li>
+                <li><a id="contex" href="about.html">About company</a></li>
+                <li><a id="contex" href="contacts.html">Contacts</a></li>
+                <li><a  id="contex" href="market.html">Buy goods</a></li>
+                <li><a id="contex" href="korzina.html">Bin</a></li>
+
+            </ul>
+            </div>
+        </div>
+
+    </div>
+
+    
+      
+  
+      
+  
+</header>
+
+
+
+    <main>
+
+
+
+     <!--
+        ===========
+        КОРЗИНА
+        ===========
+    -->
+     <br>
+     <br>
+
+    <div id="chimata">
+
+
+        
+
+        <br><br>
+
+        <div id="market">
+          <h1 id="product">Your Bin.</h1>
+            <br>
+            <div id="column1">
+             <div id="the">
+                <BR>
+                <img src="images/29.png" alt="Пример картинки" id="pics1">
+                <p id="prod_name" style="color: rgb(84, 0, 0)">bin is empty.</p>
+                <br>
+             </div>
+
+        </div>
+
+
+       </div>
+   
+
+    <br><br>
+</main>
+
+
+ <!---
+        ==============
+        ПОДВАЛ САЙТА
+        ==============
+    -->
+    <footer id="podval">
+
+        <div id="credits">
+
+            <div id="menushik">
+                <a id="well" >Menu</a>
+                <br>
+                <a id="menushik2" href="index.html">Main</a>
+                <a id="menushik2" href="about.html">About</a>
+                <a id="menushik2" href="contacts.html"> Contacts</a>
+                <a id="menushik2" href="otzov.html">Buy</a>
+                <a id="menushik2" href="korzina.html">Bin</a>
+
+        
+            </div>
+
+            <a id="tekst" href="market.html" >More goods</a>
+            <a id="tekst">Adress:<br>Truth Street, No. 34, New Jersey<br>(555) 123-4567<br><br>
+                Mn-St 09:00-21:00,<br>
+                
+                Sun.  14:00 - 21:00</a>
+
+
+        </div>
+
+         <br><br>
+         <br><br>
+    </footer>
+
+
+
+
+
+
+
+ <!---
+        ==============
+         СКРИПТ, ЧТОБЫ ШАПКА СЛАЙДИЛАСЬ ВМЕСТЕ С КУРСОРОМ
+        ==============
+    -->
+    <script>
+        const header = document.getElementById('header');
+        let isScrollingDown = false;
+        let lastScrollPosition = window.pageYOffset;
+
+        window.addEventListener('scroll', function() {
+            const currentScrollPosition = window.pageYOffset;
+            if (currentScrollPosition > lastScrollPosition) {
+                isScrollingDown = true;
+            } else {
+                isScrollingDown = false;
+            }
+            lastScrollPosition = currentScrollPosition;
+
+            if (isScrollingDown) {
+                header.classList.add('slide-down');
+            } else {
+                header.classList.remove('slide-down');
+            }
+        });
+    </script>
+
+
+
+
+ <!---
+        ==============
+         СКРИПТ, ЧТОБЫ ПОКАЗАТЬ НАВИГ МОБИЛЫ
+        ==============
+    -->
+<script>
+     // Получаем ссылки на объект и кнопку
+     var myObject = document.getElementById("mobile");
+        var toggleButton = document.getElementById("myObject");
+
+        // Добавляем обработчик события на кнопку
+        toggleButton.addEventListener("click", function() {
+            // Проверяем, есть ли у объекта класс "show"
+            if (myObject.classList.contains("show")) {
+                // Если класс "show" есть, удаляем его и добавляем класс "hidden"
+                myObject.classList.remove("show");
+                myObject.classList.add("hidden");
+            } else {
+                // Если класс "show" нет, удаляем класс "hidden" и добавляем класс "show"
+                myObject.classList.remove("hidden");
+                myObject.classList.add("show");
+            }
+        });
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,887 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto:wght@700&display=swap');
+p,a,h1,h2,h3,h4,.block{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+#a1 {
+    animation: slide-in 1s forwards;
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  @keyframes slide-in {
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  #a2 {
+    animation: slide-in 1s forwards;
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  @keyframes slide-in {
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+body{
+
+    overflow-x: hidden;
+    max-width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+  
+}
+
+/*появляется типо вврррр */
+@keyframes appear {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  /*парит типо уххххх*/
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes animate{
+
+    100%{
+    
+    text-shadow:0 0 70px rgb(225, 43, 82);
+    }
+  }
+
+
+
+/* оформление меню */
+
+
+
+#menuxa{
+    background-color: rgba(255, 94, 104, 1);
+    height: 10%;
+    width: 100%;
+  border-bottom: 1.7px solid rgba(255, 94, 104, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.slide-down {
+  top: 100%;
+}
+
+#men-main{
+
+ display: flex;
+ flex-direction: row;
+ 
+
+}
+
+#ico{
+    margin-left: 3% ;
+}
+ul{
+margin-left: -3%;
+font-size: 1.1em;
+
+}
+
+li{
+    list-style-type: none;
+    padding: 1%;
+    margin-left: 16%;
+    border-color: solid white;
+ 
+    
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+#contex{
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+   color: rgb(255, 255, 255)
+}
+
+
+#contex:hover{
+
+    color: rgb(177, 57, 57);
+}
+
+#mob{
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+    background-color: rgba(255, 94, 104, 1);
+}
+#mob:hover{
+    color: rgb(177, 57, 57);
+}
+
+#naviga{
+    display: none;
+}
+
+#numif{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.3%;
+    margin-left: 3%;
+    
+
+}
+#pp{
+    font-size: 1.2em;
+    margin-left: 20%;
+}
+#p2{
+    font-size: 0.9em;
+    margin-left: 7%;
+    margin-top: 6%;
+    white-space: nowrap;
+}
+
+
+
+ /* Рынок */
+
+ #chimata{
+
+    background-color:  rgba(253, 255, 238, 1) ;
+    width: 100%;
+ }
+
+
+
+
+
+ /* Ключевая надпись */
+
+
+#product{
+
+    color: rgb(99, 25, 25);
+    font-size: 3.6em;
+    margin-left: 3%;
+    margin-top: 7%;
+}
+
+
+
+
+
+    /* о продуктах */
+
+
+    #garant{
+
+        display: inline;
+        margin-left: 2%;
+    }
+
+    #pics3{
+    margin-left: 15%;
+    width: 25%;
+    height: 20%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5%;
+
+    }
+    #pics4{
+        margin-right: 15%;
+        width: 25%;
+        height: 20%;
+        border: 1px solid rgba(0, 0, 0, 0);
+        border-radius: 5%;
+    
+        }
+    #kk{
+        margin-right: 10%;
+    }
+
+
+    #a1{
+        display: flex;
+        flex-direction: row;
+    }
+    #a2{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .block {
+        width: 40%;
+        height: 20%;
+        padding: 20px;
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+
+    /* Подвал сайта */
+
+
+    #podval{
+
+
+        background-color: rgb(161, 26, 26);
+    }
+
+    #credits{
+        display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+        margin-top: 3%;
+        font-size: 1.2em;
+    }
+
+
+#menushik{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 1%;
+
+
+}
+
+#menushik2{
+
+ color: white;
+ transition: color 0.3s ease;
+
+}
+
+#tekst{
+
+    margin-left: 20%;
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+#well{
+    font-size: 1.2em;
+    color: white;
+}
+
+#menushik2:hover{
+
+    color: rgb(82, 9, 9);
+}
+
+#tekst:hover{
+
+    color: rgb(82, 9, 9);
+}
+#naviga{
+    display: none;
+}
+
+
+
+
+
+
+/* АДАПТИВА */
+
+
+
+
+@media (max-width: 899.999px){
+
+
+    #pics3{
+
+        margin-top: 4% ;
+        width: 26%;
+        height: 26%;
+    
+        }
+     #product{
+
+        color: rgb(99, 25, 25);
+        font-size: 3.2em;
+        margin-left: 13%;
+    }
+   
+
+ul{
+    margin-left: 9%;
+    font-size: 0.92em;
+    
+    }
+    
+    li{
+        list-style-type: none;
+        padding: 1%;
+        margin-left: 11%;
+        border-color: solid white;
+     
+        
+    }
+    
+    ul{
+        display: flex;
+        flex-direction: row;
+    
+    }
+    #credits{
+        display: flex;
+        flex-direction: row;
+        margin-left: 2%;
+        margin-top: 3%;
+        font-size: 0.95em;
+    }
+    #ico{
+        margin-left: -7% ;
+    }
+
+    #logs{
+
+    
+        height: 60px; width: 180px; margin-left: 2% ;
+        }
+}
+
+
+
+    
+
+@media(min-width: 900px) and (max-width: 1180px){
+
+    #product{
+
+        color: rgb(99, 25, 25);
+        font-size: 3.2em;
+        margin-left: 13%;
+    }
+    
+
+     ul{
+        margin-left: 35%;
+    font-size: 0.92em;
+        
+        }
+        
+        li{
+            list-style-type: none;
+            padding: 1%;
+            margin-left: 11%;
+            border-color: solid white;
+         
+            
+        }
+        
+        ul{
+            display: flex;
+            flex-direction: row;
+        
+        }
+
+        #credits{
+            display: flex;
+            flex-direction: row;
+            margin-left: 2%;
+            margin-top: 3%;
+            font-size: 1em;
+        }
+
+        #ico{
+            margin-left: 0% ;
+        }
+
+        
+    #logs{
+
+    
+        height: 60px; width: 180px; margin-left: 2% ;
+        }
+    
+
+}
+
+
+
+@media(min-width: 300px) and (max-width: 600px){
+
+    #product{
+
+        color: rgb(99, 25, 25);
+        font-size: 2.3em;
+        margin-left: 15%;
+    }
+   
+         #primeri{
+
+            display: flex;
+            flex-direction: column;
+         }
+    
+    #garant{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pics3{
+
+
+            margin-top: 4% ;
+            width: 80%;
+            height: 80%;
+        
+            
+
+    }
+
+
+    #logs{
+
+        height: 60px; 
+        width: 170px;
+         margin-left: 3% ;
+         margin-top: 0.22%;
+
+    }
+    #ico{
+        display: none;
+    }
+    .hidden {
+        display: none;
+    }
+    
+    .show{
+        
+        display: flex;
+        flex-direction: column;
+        border: 1.7px solid rgb(246, 34, 34);
+        background-color: rgba(203, 232, 192, 1) ;
+        font-size: 2.8em;
+    }
+    
+    #naviga{
+        display: flex;
+        flex-direction: column ;
+    }
+    
+    #myObject{
+    
+       display: show;
+       margin-top: 3%;
+       margin-left: 30%;
+       background-color: rgba(0, 0, 128, 0);
+       border: 0.3px solid rgba(0, 0, 128, 0);
+       font-size: 4.2em;
+    }
+    
+    
+
+    #credits{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        margin-top: 6%;
+        font-size: 1em;
+    }
+
+
+    
+
+}
+
+@media (min-width: 100px) and (max-width: 399.999px){
+
+
+    #garant{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pics3{
+
+    margin-top: 4% ;
+    width: 80%;
+    height: 80%;
+
+    }
+
+     #product{
+
+        display: none;
+    }
+    #logs{
+
+        height: 60px; 
+        width: 170px;
+         margin-left: 40% ;
+         margin-top: 2%;
+         position: absolute;
+
+    }
+#ico{
+    display: none;
+}
+
+
+        #credits{
+            display: flex;
+            flex-direction: column;
+            margin-left: 2%;
+            margin-top: 6%;
+            font-size: 1em;
+        }
+
+        #menushik2{
+            font-size: 1.5em;
+        }
+        #tekst{
+
+            margin-left: 2%;
+            margin-top: 8%;
+            color: white;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+        
+
+        .hidden {
+            display: none;
+        }
+        
+        .show{
+            
+            display: flex;
+            flex-direction: column;
+            border: 1.7px solid rgb(236, 30, 30);
+            background-color: rgba(203, 232, 192, 1) ;
+            font-size: 2.8em;
+        }
+        
+        #naviga{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #myObject{
+        
+            display: show;
+            margin-top: 3%;
+            margin-left: 0%;
+            background-color: rgba(0, 0, 128, 0);
+            border: 0.3px solid rgba(0, 0, 128, 0);
+            font-size: 3.7em;
+        }
+
+        #pics3{
+            margin-left: 15%;
+            width: 50%;
+            height: 50%;
+            border: 1px solid rgba(0, 0, 0, 0);
+            border-radius: 5%;
+        
+            }
+            #pics4{
+                margin-left: 15%;
+                width: 50%;
+                height: 50%;
+                border: 1px solid rgba(0, 0, 0, 0);
+                border-radius: 5%;
+            
+                }
+            #kk{
+                margin-right: 10%;
+            }
+        
+        
+            #a1{
+                display: flex;
+                flex-direction: column;
+            }
+            #a2{
+                display: flex;
+                flex-direction: column;
+            }
+            .block {
+                width: 70%;
+                height: 70%;
+                padding: 20px;
+                text-align: center;
+                font-size: 1.3em;
+                font-weight: bold;
+              }
+        
+        
+        
+    
+}
+
+@media (min-width: 400px) and (max-width: 599.999px){
+
+
+    #garant{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pics3{
+
+    margin-top: 4% ;
+    width: 80%;
+    height: 80%;
+
+    }
+
+     #product{
+
+        color: rgba(40, 74, 13, 1);
+        font-size: 2.2em;
+        margin-left: 14%;
+    }
+    #logs{
+
+        height: 60px; 
+        width: 170px;
+         margin-left: 3% ;
+         margin-top: 0.22%;
+
+    }
+#ico{
+    display: none;
+}
+
+
+        #credits{
+            display: flex;
+            flex-direction: column;
+            margin-left: 2%;
+            margin-top: 6%;
+            font-size: 1em;
+        }
+
+        #menushik2{
+            font-size: 1.5em;
+        }
+        #tekst{
+
+            margin-left: 2%;
+            margin-top: 8%;
+            color: white;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+        
+
+        .hidden {
+            display: none;
+        }
+        
+        .show{
+            
+            display: flex;
+            flex-direction: column;
+            border: 1.7px solid rgb(140, 162, 132);
+            background-color: rgba(203, 232, 192, 1) ;
+            font-size: 2.8em;
+        }
+        
+        #naviga{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #myObject{
+        
+           display: show;
+           margin-top: 3%;
+           margin-left: 30%;
+           background-color: rgba(0, 0, 128, 0);
+           border: 0.3px solid rgba(0, 0, 128, 0);
+           font-size: 4.2em;
+        }
+
+        #pics3{
+            margin-left: 15%;
+            width: 50%;
+            height: 50%;
+            border: 1px solid rgba(0, 0, 0, 0);
+            border-radius: 5%;
+        
+            }
+            #pics4{
+                margin-left: 15%;
+                width: 50%;
+                height: 50%;
+                border: 1px solid rgba(0, 0, 0, 0);
+                border-radius: 5%;
+            
+                }
+            #kk{
+                margin-right: 10%;
+            }
+        
+        
+            #a1{
+                display: flex;
+                flex-direction: column;
+            }
+            #a2{
+                display: flex;
+                flex-direction: column;
+            }
+            .block {
+                width: 70%;
+                height: 70%;
+                padding: 20px;
+                text-align: center;
+                font-size: 1.3em;
+                font-weight: bold;
+              }
+        
+        
+        
+    
+}
+
+@media (min-width: 600px) and (max-width: 799.999px){
+
+    #product{
+
+        color: rgba(40, 74, 13, 1);
+        font-size: 2.3em;
+        margin-left: 20%;
+    }
+
+
+    #pics3{
+        margin-left: 15%;
+        width: 50%;
+        height: 50%;
+        border: 1px solid rgba(0, 0, 0, 0);
+        border-radius: 5%;
+    
+        }
+        #pics4{
+            margin-left: 15%;
+            width: 50%;
+            height: 50%;
+            border: 1px solid rgba(0, 0, 0, 0);
+            border-radius: 5%;
+        
+            }
+        #kk{
+            margin-right: 10%;
+        }
+    
+    
+        #a1{
+            display: flex;
+            flex-direction: column;
+            margin-left: 3%;
+        }
+        #a2{
+            display: flex;
+            flex-direction: column;
+            margin-left: 3%;
+        }
+        .block {
+            width: 70%;
+            height: 70%;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+          }
+    
+
+          #logs{
+
+            height: 60px; 
+            width: 170px;
+             margin-left: 3% ;
+             margin-top: 0.22%;
+    
+        }
+    #ico{
+        display: none;
+    }
+    .hidden {
+        display: none;
+    }
+    
+    .show{
+        
+        display: flex;
+        flex-direction: column;
+        border: 1.7px solid rgb(99, 25, 25);
+        background-color: rgb(245, 56, 56) ;
+        font-size: 2.8em;
+    }
+    
+    #naviga{
+        display: flex;
+        flex-direction: column ;
+    }
+    
+    #myObject{
+    
+       display: show;
+       margin-top: 3%;
+       margin-left: 30%;
+       background-color: rgba(0, 0, 128, 0);
+       border: 0.3px solid rgba(0, 0, 128, 0);
+       font-size: 4.2em;
+    }
+    
+    
+
+    #credits{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        margin-top: 6%;
+        font-size: 1em;
+    }
+
+    #menushik2{
+        font-size: 1.5em;
+    }
+    #tekst{
+
+        margin-left: 2%;
+        margin-top: 8%;
+        color: white;
+        font-size: 1.5em;
+        transition: color 0.3s ease;
+    }
+    
+}
+
+
+
+
+
+
+
